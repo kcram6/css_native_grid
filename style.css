@@ -55,6 +55,10 @@ a:hover {
 
 }
 
+.intro a {
+    background-color:white;
+}
+
 
 .intro  {
     background-image:url('darker_bg_3@3x.png');
@@ -71,8 +75,6 @@ a:hover {
     grid-row: 1 / 4;
     padding:100px;
     text-transform: uppercase;
-    
-    
 
     
 }
@@ -131,7 +133,53 @@ a:hover {
     
 }
 
+.preamble {
+    background-color:var(--royal-purple);
+    font-family: var(--heading-font);
+    padding:50px 80px;
+}
 
+.preamble h3 {
+    font-size:2em;
+    padding:20px;
+}
+
+.preamble p {
+    text-align:right;
+    width:70%;
+    margin: 0 auto;
+    margin-left:300px;
+    line-height:1.5em;
+}
+
+#zen-supporting {
+    background-image:url('cropped_wavy.png');
+    background-attachment:fixed;
+    
+}
+
+#zen-supporting a {
+    background-color:white;
+}
+
+nav ul li{
+    display: grid;
+    grid-template-columns: repeat (8, 1fr);
+}
+
+nav ul li:nth-child(odd) {
+    background-color:var(--dark-blue);
+
+}
+
+nav ul li:nth-child(even) {
+    background-color:var(--neon-purple);
+    color: white;
+}
+
+nav ul li:nth-child(even) a{
+    color: var(--dark-blue);
+}
 
 
 
