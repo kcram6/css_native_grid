@@ -155,6 +155,10 @@ a:hover {
 #zen-supporting {
     background-image:url('cropped_wavy.png');
     background-attachment:fixed;
+    display:grid;
+    grid-template-columns: repeat(8, 1fr);
+    /* grid-template-row: repeat(10, 1fr); */
+    font-size:0.8em;
     
 }
 
@@ -177,10 +181,48 @@ nav ul li:nth-child(even) {
     color: white;
 }
 
-nav ul li:nth-child(even) a{
+nav ul li:nth-child(even) a  {
     color: var(--dark-blue);
 }
 
+#zen-explanation {
+    grid-column: 1 / 7;
+    background-color:white;
+    color: var(--dark-blue);
+    font-weight:bold;
+    padding:50px;
+    
+}
+
+#zen-participation {
+    grid-column: 2 / 6;
+    background-color:var(--red);
+    padding:100px;
+    
+}
+
+#zen-benefits {
+    grid-column: 1 /5;
+    padding:40px;
+}
+
+#zen-requirements {
+    grid-column: 3/ 8;
+    background-color:var(--main-bg-color);
+    color:var(--neon-purple);
+    padding:20px;
+    line-height: 1.7em;
+}
+
+footer {
+    grid-column: 1 / 8;
+}
+
+#zen-supporting h3 {
+    font-size:1.5em;
+    text-align:center;
+    padding:15px;
+}
 
 
 
