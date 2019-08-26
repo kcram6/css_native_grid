@@ -61,7 +61,8 @@ a:hover {
 
 
 .intro  {
-    background-image:url('darker_bg_3@3x.png');
+    background-image:url('bigger_bg_3@3x.png');
+    background-attachment: fixed;
     background-size:cover;
 }
 
@@ -195,7 +196,7 @@ nav ul li:nth-child(even) a  {
 }
 
 #zen-participation {
-    grid-column: 2 / 6;
+    grid-column: 2 / 8;
     background-color:var(--red);
     padding:100px;
     
@@ -204,10 +205,11 @@ nav ul li:nth-child(even) a  {
 #zen-benefits {
     grid-column: 1 /5;
     padding:40px;
+    line-height:3em;
 }
 
 #zen-requirements {
-    grid-column: 3/ 8;
+    grid-column: 3/ 10;
     background-color:var(--main-bg-color);
     color:var(--neon-purple);
     padding:20px;
@@ -216,10 +218,34 @@ nav ul li:nth-child(even) a  {
 
 footer {
     grid-column: 1 / 8;
+    margin:100px;
+}
+footer a {
+    padding: 30px;
+}
+
+footer a:first-child{
+    background-color:var(--royal-purple)!important;
+    
+}
+
+footer a:nth-child(2) {
+    background-color: Var(--neon-purple)!important;
+    color:white;
+}
+
+footer a:nth-child(3) {
+    background-color: var(--red)!important;
+}
+
+footer a:nth-child(5) {
+    background-color: var(--main-bg-color)!important;
+    color:white;
+    border:1px solid white;
 }
 
 #zen-supporting h3 {
-    font-size:1.5em;
+    font-size:1.9em;
     text-align:center;
     padding:15px;
 }
