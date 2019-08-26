@@ -136,7 +136,6 @@ a:hover {
 
 .preamble {
     background-color:var(--royal-purple);
-    font-family: var(--heading-font);
     padding:50px 80px;
 }
 
@@ -167,27 +166,12 @@ a:hover {
     background-color:white;
 }
 
-nav ul li{
-    display: grid;
-    grid-template-columns: repeat (8, 1fr);
-}
 
-nav ul li:nth-child(odd) {
-    background-color:var(--dark-blue);
 
-}
 
-nav ul li:nth-child(even) {
-    background-color:var(--neon-purple);
-    color: white;
-}
-
-nav ul li:nth-child(even) a  {
-    color: var(--dark-blue);
-}
 
 #zen-explanation {
-    grid-column: 1 / 7;
+    grid-column:1 / 7;
     background-color:white;
     color: var(--dark-blue);
     font-weight:bold;
@@ -236,6 +220,7 @@ footer a:nth-child(2) {
 
 footer a:nth-child(3) {
     background-color: var(--red)!important;
+    color:white;
 }
 
 footer a:nth-child(5) {
@@ -250,6 +235,110 @@ footer a:nth-child(5) {
     padding:15px;
 }
 
+.sidebar {
+    background-image: url('darker_bg_3@3x.png');
+    background-position: right;
+    
+}
 
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    margin: 0px 200px;
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul li:nth-child(1) {
+    background-color: white;
+    grid-column: 1 / 2 ;
+    color: var(--neon-purple)
+
+}
+
+nav ul li:nth-child(2) {
+    background-color:red;
+    
+    grid-column:2 / 3;
+}
+
+nav ul li:nth-child(2) a {
+    color:white;
+}
+
+nav ul li:nth-child(3) {
+    background-color: var(--main-bg-color);
+    grid-column:3 / 4;
+}
+
+nav ul li:nth-child(4) {
+    grid-column:4;
+}
+
+nav ul li:nth-child(4) {
+    grid-column:4;
+    background-color: #454add;
+}
+
+nav ul li:nth-child(5) {
+    grid-column:1 / 2;
+    background-color: var(--neon-purple);
+    color:white;
+}
+
+nav ul li:nth-child(6) {
+    grid-column:2 / 3;
+    background-color: var(--main-bg-color);
+    color:white;
+}
+
+nav ul li:nth-child(7) {
+    grid-column:3 / 4;
+    
+    background-color: var(--dark-blue);
+}
+
+nav ul li:nth-child(8) {
+    grid-column:4 ;
+    background-color: white;
+    color: var(--neon-purple)
+}
+
+.select {
+    display:none;
+}
+
+
+
+nav ul li:nth-child(7) a{
+    color: white;
+}
+
+nav ul li:nth-child(5) a {
+    color:white;
+}
+
+
+nav ul li:nth-child(4) a{
+    color: white;
+}
+
+nav ul li:nth-child(1) a{
+    color: var(--neon-purple);
+}
+nav ul li:nth-child(8) a{
+    color: var(--neon-purple);
+}
+
+.archives {
+    display:none;
+}
 
 
